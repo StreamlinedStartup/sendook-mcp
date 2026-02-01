@@ -22,17 +22,17 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
-[project.urls]
-Homepage = "https://www.sendook.com"
-Repository = "https://github.com/StreamlinedStartup/sendook-mcp"
-Documentation = "https://github.com/StreamlinedStartup/sendook-mcp#readme"
-Issues = "https://github.com/StreamlinedStartup/sendook-mcp/issues"
-
 dependencies = [
     "mcp>=1.0.0",
     "httpx>=0.27.0",
     "pydantic>=2.0.0",
 ]
+
+[project.urls]
+Homepage = "https://www.sendook.com"
+Repository = "https://github.com/StreamlinedStartup/sendook-mcp"
+Documentation = "https://github.com/StreamlinedStartup/sendook-mcp#readme"
+Issues = "https://github.com/StreamlinedStartup/sendook-mcp/issues"
 
 [project.optional-dependencies]
 dev = [
