@@ -13,12 +13,11 @@ MCP (Model Context Protocol) server for [Sendook](https://www.sendook.com) - an 
 ## Installation
 
 ```bash
-# Using uv (recommended)
-cd sendook_mcp
-uv sync
+# Using uvx (recommended)
+uvx sendook-mcp
 
 # Or using pip
-pip install -e .
+pip install sendook-mcp
 ```
 
 ## Configuration
@@ -43,8 +42,8 @@ Add to your Claude Desktop configuration (`~/.config/Claude/claude_desktop_confi
 {
   "mcpServers": {
     "sendook": {
-      "command": "uv",
-      "args": ["run", "--directory", "/path/to/sendook_mcp", "python", "sendook_mcp.py"],
+      "command": "uvx",
+      "args": ["sendook-mcp"],
       "env": {
         "SENDOOK_API_KEY": "your-api-key-here"
       }
@@ -53,7 +52,7 @@ Add to your Claude Desktop configuration (`~/.config/Claude/claude_desktop_confi
 }
 ```
 
-Or if installed globally:
+Or if installed via pip:
 
 ```json
 {
